@@ -1,10 +1,8 @@
 import React from 'react';
 import ImageTrail from '../component/ImageTrail/ImageTrail';
-import { getOsakaImageUrls } from '../utils/imageUtils';
 
-const DestOne = () => {
+const Dest = ({fileNames}) => {
 
-  const fileNames = getOsakaImageUrls();
   return (
     <div style={{ height: '1000px', position: 'relative', overflow: 'hidden', backgroundColor: 'black' }}>
       <ImageTrail
@@ -16,4 +14,4 @@ const DestOne = () => {
   );
 };
 
-export default DestOne;
+export default Dest;
